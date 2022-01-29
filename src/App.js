@@ -79,7 +79,7 @@ const App = () => {
         totalNumMovies={totalNumMovies} pageNum={pageNum} setPageNum={setPageNum} />}/>
         <Route path="/favorites" element={<Favorites favoriteMovies={favoriteMovies}
         getWatchLaterMovies={(data)=>getWatchLaterMovies(data)} watchLater={watchLater} />}/>
-        <Route path="/watchlater" element={<WatchLater watchLater={watchLater} />}/>
+        <Route path="/watchlater" element={<WatchLater watchLater={watchLater} setWatchLater={setWatchLater} />}/>
         <Route path="*" element={<ErrorPage />}/>
     </Routes>
     </Router>
