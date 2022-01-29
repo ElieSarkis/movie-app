@@ -1,0 +1,12 @@
+.nav-container{
+    background-color: black;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.nav-item{
+    color: white;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
