@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './favorites.css';
 
 const Favorites = (prop) => {

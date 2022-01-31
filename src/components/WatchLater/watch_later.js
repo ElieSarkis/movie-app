@@ -1,11 +1,6 @@
 const WatchLater = (prop) => {
-  console.log("watch later ", prop)
-
-  const deleteVideo = (video) => {
-    // setWatchLater
-    console.log("video ", video);
+    const deleteVideo = (video) => {
     const updatedList = prop.watchLater.filter((vid)=> vid.id !== video.id);
-    console.log("updated list ", updatedList);
     prop.setWatchLater(updatedList);
   }
 
@@ -19,7 +14,7 @@ const WatchLater = (prop) => {
             >Delete</button>
             <li className="list">{el.title}</li> </div>
           }) 
-          : "There are no filtered movies yet..." }
+          : "There are no added movies yet..." }
         </ul>
       </div>
     );

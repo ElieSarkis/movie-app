@@ -31,7 +31,7 @@ const columns = [
   { id: 'vote_average', label: 'Vote Average', minWidth: 50, align: 'right', },
 ];
 
-export default function MoviesTable(prop) {
+  const MoviesTable = (prop) => {
     const rows = prop.movieResults;
     const [page, setPage] = React.useState(0);
     const [rowsPerPage, setRowsPerPage] = React.useState(10);
@@ -113,3 +113,5 @@ export default function MoviesTable(prop) {
     </Paper>
   );
 }
+
+export default MoviesTable;
