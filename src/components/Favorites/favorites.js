@@ -15,8 +15,8 @@ const Favorites = (prop) => {
       <div>
         <ul className="list-container">
           {favoriteMovies?.length > 0 ?
-          favoriteMovies?.map((el)=>{
-            return <div className='list-sub-container'><button type="button" className={`btn btn-info`}
+          favoriteMovies?.map((el, index)=>{
+            return <div key={index} className='list-sub-container'><button type="button" className={`btn btn-info`}
             onClick={()=>addToWatchLater(el)}>Watch</button>
             <li className="list">{el.title}</li> </div>
           }) 
